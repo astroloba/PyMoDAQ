@@ -13,6 +13,10 @@ This module is the heart of PyMoDAQ, it will:
 The flow of this module is as follow:
 
 * At startup you have to define/load/modify a preset (see :ref:`preset_manager`) representing an ensemble of actuators and detectors
+
+  * Alternatively, you can use the command-line option ``-p`` (or ``--preset``) to load the dashboard directly with a preset:
+    ``$ dashboard -p preset_name``
+
 * Define/load/modify eventual overshoots (see :ref:`overshoot_manager`)
 * Define/load/modify eventual ROI (Region of interests) selections (see :ref:`roi_manager`)
 * Use the actuators and detectors manually to drive your experiment
